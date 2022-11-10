@@ -23,7 +23,7 @@
 
     <style name="Theme.PizzaParty.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <resources>
+
         <style name="Theme.LightsOut" parent="Theme.AppCompat.Light.DarkActionBar">
             <item name="colorPrimary">@color/blue_500</item>
             <item name="colorPrimaryDark">@color/blue_700</item>
@@ -42,5 +42,5 @@
             <item name="android:layout_marginRight">20dp</item>
             <item name="android:textSize">20sp</item>
         </style>
-    </resources>
+
 </resources>

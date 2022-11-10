@@ -1,5 +1,6 @@
 package com.example.pizzaparty
 
+import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -40,4 +41,11 @@ class ColorActivity : AppCompatActivity() {
         setResult(RESULT_OK, dataIntent)
         finish()
     }
+
+fun finish() {
+    TODO("Not yet implemented")
+}
+
+fun setResult(resultOk: Any, dataIntent: Intent) {
+    TODO("Not yet implemented")
 }

@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             game.state = savedInstanceState.getString(GAME_STATE)!!
             setButtonColors()
         }
-        override fun onSaveInstanceState(outState: Bundle) {
+        fun onSaveInstanceState(outState: Bundle) {
             super.onSaveInstanceState(outState)
             outState.putString(GAME_STATE, game.state)
         }
@@ -65,6 +65,11 @@ class MainActivity : AppCompatActivity() {
     private fun startGame() {
         game.newGame()
         setButtonColors()
+    }
+    fun onLightsOutButtonClick(view: View)
+    {
+        val intent = Intent(this, LightsOutGame::class.java)
+        startActivity(intent)
     }
     fun onChangeColorClick(view: View) {
         val intent = Intent(this, ColorActivity::class.java)
@@ -113,7 +118,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+    fun onHelpClick(view: View) {
+        val intent = Intent(this, HelpActivity::class.java)
+        startActivity(intent)
+    }
     fun onNewGameClick(view: View) {
         startGame()
     }

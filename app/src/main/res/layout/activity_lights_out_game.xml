@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zybooks.lightsout.MainActivity">
+    tools:context="com.example.pizzaparty.MainActivity">
 
     <GridLayout
         android:id="@+id/light_grid"
